@@ -1,0 +1,9 @@
+Just text: 
+
+This is my first time using Django! I am following the tutorial located here: https://docs.djangoproject.com/en/1.8/intro/tutorial01/
+
+I will be creating a basic poll application. There will be 2 parts:
+
+1) A public site that lets people see the poll and vote
+2) An admin site that lets me add, change, and delete polls
+
