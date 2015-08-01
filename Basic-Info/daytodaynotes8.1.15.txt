@@ -12,3 +12,6 @@ Why 3 steps and not just 1 step? They are separate commands to make and apply mi
 to your version control system (make migrations) and then ship them to your app (migrate). As always, read the documentation
 on manage.py
 
+https://docs.djangoproject.com/en/1.8/topics/db/queries/#field-lookups-intro
+This is quite interesting! Field lookups are very similar to SQL "Where" clauses. 
+basic lookups have the format of field__lookups=value
