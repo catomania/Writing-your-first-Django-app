@@ -1,0 +1,14 @@
+Note taking: 
+
+- What is the relationship between models, databases, and data?
+
+- How to make model changes:
+  * change your models in models.py
+  * run python manage.py makemigrations, this will create migrations for those changes 
+  * run python manage.py migrate to APPLY those changes to a database
+
+- Why run these steps? 
+Why 3 steps and not just 1 step? They are separate commands to make and apply migrations because you will commit migrations
+to your version control system (make migrations) and then ship them to your app (migrate). As always, read the documentation
+on manage.py
+
