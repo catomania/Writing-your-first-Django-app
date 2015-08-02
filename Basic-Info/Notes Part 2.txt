@@ -1,0 +1,1 @@
+Part 2 is about creating a superuser and adjusting the admin backend pages. 
