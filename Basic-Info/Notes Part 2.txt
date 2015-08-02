@@ -6,5 +6,23 @@ You can assign arbitrary HTML classes to each fieldset. There is a collapse clas
 
 You can also register the "choice" object to the admin.py file. admin.site.register() takes only 2-3 arguments. You can have multiple admin.site.register() lines. 
 
-There are lots of cool admin.X arguments to use. Example: admin.StackedInline will change (in this case) a dropdown list of choices to a 'stacked inline' list of choices instead. This means less clicking around, which is great. 
+There are lots of cool admin.X arguments to use. Example: admin.StackedInline will change (in this case) a dropdown list of choices to a 'stacked inline' list of choices instead. This means less clicking around, which is great. However, if you want to save space, you can always choose a tabular way of displaying choices. This means using admin.TabularInline instead.
+
+Adjusting the change list page (admin > home > polls > question) to display individual fields. This is done by adding a list_display line in the QuestionAdmin class that takes fields as arguments. If you want to change the column header value of was_published_recently, you can do so in models.py by editing the Question class. 
+
+Set list_display to control which fields are displayed on the change list page of admin. If element of list_display represents a certain database field (e.g.: was_published_recently), then you can use list_display methods on them. 
+
+Create filters for questions (pub_date filter specifically). by adding a list_filter line to the QuestionAdmin class in admin.py. Note how the filter choices are auto-generated due to the type of field (date).
+
+Change the look and feel by adjusting the header text on each page of Admin. Custom project templates. You will need to grab and copy the Django admin template file (base site.html) into a new directory within your mysite project (mysite > templates > admin). However, in practicality, you would actually edit the AdminSite siteheader attribute instead of the base site.html file.
+
+Any of Django's default admin templates can be overridden. To override, just copy the template file over from the default directory and change it! 
+
+If APP_DIRS is set to true, then Django will automatically look for the templates subdirectory within each application package. 
+
+If the project grew more complex, the tutorial recommends changing the application templates intead of the project templates. This way, you will not need to adjust the templates within the project each time you start a new project.
+
+You can also customize the admin/index.html page so that you hard-code the Django app admin pages you want . 
+
+
 
