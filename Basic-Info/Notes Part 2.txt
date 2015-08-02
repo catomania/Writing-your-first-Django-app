@@ -1,1 +1,10 @@
 Part 2 is about creating a superuser and adjusting the admin backend pages. 
+
+In the polls\admin.py file, you can adjust how the questions look. You can create a model admin object and then pass it as the second argument to admin.site.register(). You can adjust the order of the questions in the admin section for your Poll app here. You can also create field sets.
+
+You can assign arbitrary HTML classes to each fieldset. There is a collapse class. 
+
+You can also register the "choice" object to the admin.py file. admin.site.register() takes only 2-3 arguments. You can have multiple admin.site.register() lines. 
+
+There are lots of cool admin.X arguments to use. Example: admin.StackedInline will change (in this case) a dropdown list of choices to a 'stacked inline' list of choices instead. This means less clicking around, which is great. 
+
