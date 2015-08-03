@@ -6,3 +6,5 @@ Views: a type of webpage
 2) Question detail page
 3) Question results page
 4) Vote action page
+
+You create views in your polls/view.py file. 
