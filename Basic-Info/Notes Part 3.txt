@@ -1,0 +1,8 @@
+Part 3
+
+Views: a type of webpage
+
+1) Question index page
+2) Question detail page
+3) Question results page
+4) Vote action page
