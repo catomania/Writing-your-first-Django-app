@@ -14,4 +14,4 @@ Views can also take arguments.
 
 polls/urls.py and mysite/urls.py...both are needed!
 
-Currently dealing with interesting mystery, http://127.0.0.1:8000/polls/ = 404, but http://127.0.0.1:8000/polls (without the /) works just fine. Hmm? 
+And when they say mysite/urls.py, they are referring to the mysite/mysite folder? Weird!
