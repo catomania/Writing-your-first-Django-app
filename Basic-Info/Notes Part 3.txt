@@ -8,3 +8,8 @@ Views: a type of webpage
 4) Vote action page
 
 You create views in your polls/view.py file. After you create your view, you need to configure it map it to a URL. 
+So, you create a urls.py file and then you use REGULAR EXPRESSIONS! Woohoo! Url() regex arguments. In practice, you don't need to be a Regex expert, but you should know simple patterns.
+
+Views can also take arguments. 
+
+polls/urls.py and mysite/urls.py...both are needed!
