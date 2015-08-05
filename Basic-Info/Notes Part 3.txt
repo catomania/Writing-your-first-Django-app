@@ -14,4 +14,6 @@ Views can also take arguments.
 
 polls/urls.py and mysite/urls.py...both are needed!
 
-And when they say mysite/urls.py, they are referring to the mysite/mysite folder? Weird!
+And when they say mysite/urls.py, they are referring to the mysite/mysite folder. The outside mysite folder is just a project folder, you can name it whatever you like. 
+
+Other views to write: detail, results, vote.
