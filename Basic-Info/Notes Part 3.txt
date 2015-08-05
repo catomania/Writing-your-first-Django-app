@@ -34,3 +34,5 @@ my project's TEMPLATES settings describes how Django will load and render templa
 default settings confgures a DjangoTemplates backend.
 By convention DjangoTemplates looks for a templates subdir in each of Installed_apps
 this is how django knows to find the polls templates even though we didnt modify the DIRS option
+
+namespacing = putting templates in another dir named for the application itself polls/templates/polls/index.html. 
