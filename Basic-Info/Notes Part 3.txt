@@ -27,3 +27,10 @@ Where does question_id='42' come from? The parenthesis from r'^(?P<question_id>[
 
 Every view:
 returns an HttpResponse object containing the content for the requested page or raising an exception (404, no page found). 
+
+You can use Django's own database api to pull content from database and display on your website.
+
+my project's TEMPLATES settings describes how Django will load and render templates.
+default settings confgures a DjangoTemplates backend.
+By convention DjangoTemplates looks for a templates subdir in each of Installed_apps
+this is how django knows to find the polls templates even though we didnt modify the DIRS option
