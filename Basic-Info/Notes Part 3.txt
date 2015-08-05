@@ -38,3 +38,7 @@ this is how django knows to find the polls templates even though we didnt modify
 namespacing = putting templates in another dir named for the application itself polls/templates/polls/index.html. 
 
 for index.html..what is this {%  %} stuff??
+
+There is also a render() shortcut which takes request object, template, and dictionary as its arguments.
+
+Raising a 404 error: 
