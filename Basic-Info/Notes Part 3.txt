@@ -1,7 +1,7 @@
 Part 3
 
 Views: a type of webpage
-
+(all 4 must be in polls.urls)
 1) Question index page
 2) Question detail page
 3) Question results page
@@ -16,4 +16,14 @@ polls/urls.py and mysite/urls.py...both are needed!
 
 And when they say mysite/urls.py, they are referring to the mysite/mysite folder. The outside mysite folder is just a project folder, you can name it whatever you like. 
 
-Other views to write: detail, results, vote.
+Other views to write: detail, results, vote. After you modify views.py, you then need to also add these views into the polls.urls file. 
+
+When someone requests a page like polls/42/, Django will load mysite.urls and finds the variable named urlpatterns and traverses the regexes in order. The includes() function here references other URLconfs. The Regex in include() end with a trailing slash, and not a $. Whenever Django gets to an includes(), it will remove the url matching part and send off the remaining part to be included in urlconf for more processing.
+
+1) Django matches at ^polls/ in the main mysite.urls file.
+2) Then, Django strips off the matching "polls/" part and sends over 42/ to polls.urls for further processing. In polls.urls, then the 42/ will match r'^(?P<question_id>[0-9]+)/$' (which matches any set of #'s followed by a /. Then it will result in a call to the detail view detail(request=<HttpRequest object>, question_id='42')
+
+Where does question_id='42' come from? The parenthesis from r'^(?P<question_id>[0-9]+)/$' captures the text which matches this regex and sends it as an argument to the view function. ?P<question_id> defines the name that will be used to identify the matched pattern (42). [0-9]+ will match any set of #'s. 
+
+Every view:
+returns an HttpResponse object containing the content for the requested page or raising an exception (404, no page found). 
