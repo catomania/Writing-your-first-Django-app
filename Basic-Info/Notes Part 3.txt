@@ -36,3 +36,5 @@ By convention DjangoTemplates looks for a templates subdir in each of Installed_
 this is how django knows to find the polls templates even though we didnt modify the DIRS option
 
 namespacing = putting templates in another dir named for the application itself polls/templates/polls/index.html. 
+
+for index.html..what is this {%  %} stuff??
