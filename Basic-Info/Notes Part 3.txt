@@ -41,4 +41,4 @@ for index.html..what is this {%  %} stuff??
 
 There is also a render() shortcut which takes request object, template, and dictionary as its arguments.
 
-Raising a 404 error: 
+Raising a 404 error: need to import Http404
