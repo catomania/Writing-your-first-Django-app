@@ -41,4 +41,10 @@ for index.html..what is this {%  %} stuff??
 
 There is also a render() shortcut which takes request object, template, and dictionary as its arguments.
 
-Raising a 404 error: need to import Http404
+Raising a 404 error: need to import Http404. shortcut is using get_object_or_404 function. 
+
+django's template system:
+- uses dot-lookup syntax. {{ question.question_text}} it looks up the question object (which I made in models.py) and then if it fails, it would have tried an attribute lookup (question_text?). 
+
+method calling occurs in teh {% for %} loop: question.choice_set.all- basically interpreted as Python code. question.choice_set.all() returns all Choice objects. Very interesting syntax here. 
+
