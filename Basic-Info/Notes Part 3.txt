@@ -50,5 +50,5 @@ method calling occurs in teh {% for %} loop: question.choice_set.all- basically 
 
 important things to do:
 
-namespace urls.py file in main mysite folder and then adjust the html of the views accordingly. 
+namespace urls.py file in main mysite folder and then adjust the html of the views accordingly. This is because in a real django project, you may have multiple apps with the same view names ('detail' view is pretty generic!). 
 you should also remove hard-coded URLs from your template files. instead you can use the {% url %} template tag. So <a href = "{% url ' detail' question.id %}" will refer to the url w/ the name of 'detail' in your urls.py file (in urls.py in polls). 
