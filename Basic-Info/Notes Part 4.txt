@@ -2,4 +2,4 @@
 
 - W/ the submitted data, we should create a view that handles submitted data and does something with it. 
 
-
+- need to add secret_key.txt file to the gitignore pile
