@@ -1,0 +1,1 @@
+- Update poll template with the <form> HTML element. 
