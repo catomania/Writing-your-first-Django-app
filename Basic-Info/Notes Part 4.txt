@@ -1,1 +1,5 @@
-- Update poll template with the <form> HTML element. 
+- Update poll template with the <form> HTML element. In order to prevent Cross Site Request Forgeries, you can use the csrf_token.
+
+- W/ the submitted data, we should create a view that handles submitted data and does something with it. 
+
+
