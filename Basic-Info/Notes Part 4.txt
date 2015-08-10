@@ -7,3 +7,5 @@
 - Updated results.html file to have it load choice voting results. 
 
 - Why use simplified views? Because Django made a shortcut for a common use case in web dev: getting data from the database based on URL parmeter, load a template, return the rendered template. Because this is so common, we can use simplified views. 
+
+- Code shuffling: update the urls.py file, delete old views, add new generic views. Typically though you start with simplified views first.
