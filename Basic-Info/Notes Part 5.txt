@@ -1,0 +1,20 @@
+Automated tests: simple routines that check code operation
+
+Can range from tiny detail -> overall operation of the software. 
+
+You create a set of tests once, and then as you make changes to your app, you check that your code still works as intended.
+
+Why create tests? Saves time (if app grows in complexity). Prevent issues (promotes transparency). 
+Makes code more attractive (other developers will trust it more). Helps teams work together. Complex apps are maintained
+by teams. Tests help make sure colleagues don't break your code. 
+
+If you want to be a good Django programmer, you must be good at writing tests!
+
+There is even such a thing as "test driven development," tests are written before app is written.
+
+Sometimes you should write your first test the next time you make a change (add new feature, fix a bug). 
+
+Identify a bug in this case: Question.was_published_recently() method returns true even when publish date is in the future.
+
+
+
