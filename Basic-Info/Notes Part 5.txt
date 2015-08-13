@@ -16,5 +16,7 @@ Sometimes you should write your first test the next time you make a change (add 
 
 Identify a bug in this case: Question.was_published_recently() method returns true even when publish date is in the future.
 
+Update the function to make sure that "true" only happens when it falls between NOW and (now minus 1 day)
+
 
 
