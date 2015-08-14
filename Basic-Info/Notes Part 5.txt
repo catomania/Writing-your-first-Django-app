@@ -18,5 +18,6 @@ Identify a bug in this case: Question.was_published_recently() method returns tr
 
 Update the function to make sure that "true" only happens when it falls between NOW and (now minus 1 day)
 
+You can write tests for views as well! 
 
 
