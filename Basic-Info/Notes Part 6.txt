@@ -1,1 +1,5 @@
 Alrighty, now for editing the static files...
+
+django.contrib.staticfiles = collects static files from each app
+
+Static file namespacing: putting the static files inside another directory (polls"2") named after the app itself
